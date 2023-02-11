@@ -11,7 +11,6 @@ import { TodosError } from "../TodosError";
 import { TodosLoading } from "../TodosLoading";
 import { EmptyTodos } from "../EmptyTodos";
 
-
 function AppUI(){
   const {
     error,

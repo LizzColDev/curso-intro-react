@@ -1,4 +1,6 @@
 import React from "react";
+import { IconCompleted } from "../IconCompleted";
+import { IconDeleted } from "../IconDeleted";
 import './TodoItem.css';
 
 function TodoItem(props){
@@ -8,7 +10,7 @@ function TodoItem(props){
                 className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`}
                 onClick={props.onComplete}
             >
-                √
+                <IconCompleted />
             </span>
             <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
                 {props.text}
@@ -17,7 +19,7 @@ function TodoItem(props){
                 className="Icon Icon-delete"
                 onClick={props.onDelete}
             >
-                X
+                <IconDeleted />
             </span>
         </li>
     );

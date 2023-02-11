@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/task-mate/static/css/main.9a6e1ccf.css",
-    "main.js": "/task-mate/static/js/main.b78dba8f.js",
-    "index.html": "/task-mate/index.html",
-    "main.9a6e1ccf.css.map": "/task-mate/static/css/main.9a6e1ccf.css.map",
-    "main.b78dba8f.js.map": "/task-mate/static/js/main.b78dba8f.js.map"
+    "main.css": "/todo-mate/static/css/main.9a6e1ccf.css",
+    "main.js": "/todo-mate/static/js/main.b78dba8f.js",
+    "index.html": "/todo-mate/index.html",
+    "main.9a6e1ccf.css.map": "/todo-mate/static/css/main.9a6e1ccf.css.map",
+    "main.b78dba8f.js.map": "/todo-mate/static/js/main.b78dba8f.js.map"
   },
   "entrypoints": [
     "static/css/main.9a6e1ccf.css",

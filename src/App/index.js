@@ -42,12 +42,17 @@ function App() {
           />
         </TodoHeader>
 
-        <TodoList error={error}
+        <TodoList 
+          error={error}
           loading={loading} 
           searchedTodos={searchedTodos} 
+          searchValue={searchValue}
+          totalTodos={totalTodos}
           onError={()=> <TodosError/>}
           onLoading={()=><TodosLoading/>}
           onEmptyTodos={()=><EmptyTodos/>}
+          
+          onEmptySearchResults={(searchText)=><p>No hay resultados para {searchText} </p>}
           render={todo=>(
             <TodoItem 
             key={todo.text} 

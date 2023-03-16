@@ -16,21 +16,26 @@ import { ChangeAlert } from "../ChangeAlert";
 
 function App() {
   const {
-    error,
-    loading, 
-    searchedTodos, 
-    toogleTodo, 
-    deleteTodo,
-    openModal,
-    setOpenModal,
-    totalTodos, 
+    states,
+    stateUpdaters,
+  } = useTodos();
+  const {
+    loading,
+    totalTodos,
     completedTodos,
-    searchValue, 
+    searchValue,
+    searchedTodos,
+    openModal,
+    error,
+  } = states;
+  const {
     setSearchValue,
     addTodo,
+    toogleTodo,
+    deleteTodo,
+    setOpenModal,
     synchronizeTodos
-  } = useTodos();
-
+  } = stateUpdaters;
   return (
 <React.Fragment>
         <TodoHeader loading={loading}>
